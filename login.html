@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="login-styles.css" rel="stylesheet" />
+    <title>Login — MediByte</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="login">
+        <img src="images/medibytelogo.png" alt="MediByte Logo" class="logo" />
+        <p class="admin-access-note">Authorized Users Only</p>
+
+        <form action="dashboard.html" method="post" class="login-form" novalidate>
+          <div class="input-box">
+            <label for="username">Username</label>
+            <input id="username" type="text" placeholder="Enter your username" required />
+          </div>
+
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter your password" required />
+          </div>
+
+          <div class="submitbtn">
+            <button type="submit">Login</button>
+          </div>
+
+        </form>
+
+        <p class="subtitle">Medical Supply & Inventory Management System Alpha v1 </p>
+      </section>
+    </main>
+    
+    <script src="login.js"></script>
+  </body>
+</html>

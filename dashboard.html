@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Sidebar CSS -->
+    <link rel="stylesheet" href="sidebar-styles.css" />
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="dashboard-style.css" />
+
+    <title>Dashboard — MediByte</title>
+  </head>
+
+  <body>
+
+  <!-- ===== SIDEBAR NAVIGATION ===== -->
+  <aside class="sidebar">
+
+    <div class="sidebar-header">
+      <img src="images/medibyteicon.png" alt="MediByte" class="logo-icon" />
+
+      <div class="brand-name" aria-label="MediByte">
+        <span class="brand-medi">Medi</span>
+        <span class="brand-byte">Byte</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <p class="nav-label">MAIN</p>
+
+      <a href="dashboard.html" class="nav-link active">
+        <img src="images/dashboard-icon.png" alt="" class="icon" />
+        <span>Dashboard</span>
+      </a>
+
+      <a href="inventory.html" class="nav-link">
+        <img src="images/inventory-icon.png" alt="" class="icon" />
+        <span>Inventory</span>
+      </a>
+
+      <a href="request.html" class="nav-link">
+        <img src="images/request-icon.png" alt="" class="icon" />
+        <span>Requests</span>
+      </a>
+
+      <p class="nav-label">RECORDS</p>
+
+      <a href="distribution-log.html" class="nav-link">
+        <img src="images/distribution-icon.png" alt="" class="icon" />
+        <span>Distribution Log</span>
+      </a>
+
+      <p class="nav-label">ACCOUNT</p>
+
+      <a href="settings.html" class="nav-link">
+        <img src="images/setting-icon.png" alt="" class="icon" />
+        <span>Settings</span>
+      </a>
+
+      <a href="login.html" class="nav-link">
+        <img src="images/logout-icon.png" alt="" class="icon" />
+        <span>Logout</span>
+      </a>
+
+    </nav>
+  </aside>
+
+  <!-- ===== MAIN CONTENT AREA ===== -->
+  <main class="main-content">
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+
+      <h1 class="page-title">Dashboard</h1>
+
+      <p class="page-subtitle">
+        Central Supply Room - Medical Supply Tracking System
+      </p>
+
+    </div>
+
+    <!-- ===== STAT CARDS ===== -->
+    <div class="stats-grid">
+
+      <!-- Total Supplies -->
+      <div class="card">
+        <div class="stat-label">TOTAL SUPPLIES</div>
+        <div class="stat-number">245</div>
+        <span class="badge badge-success">In stock</span>
+      </div>
+
+      <!-- Low Stock -->
+      <div class="card">
+        <div class="stat-label">LOW STOCK ALERTS</div>
+        <div class="stat-number">12</div>
+        <span class="badge badge-warning">Needs restock</span>
+      </div>
+
+      <!-- Out of Stock -->
+      <div class="card">
+        <div class="stat-label">OUT OF STOCK</div>
+        <div class="stat-number">16</div>
+        <span class="badge badge-danger">Restock Immediately</span>
+      </div>
+
+      <!-- Pending Requests -->
+      <div class="card">
+        <div class="stat-label">PENDING REQUESTS</div>
+        <div class="stat-number">8</div>
+        <span class="badge badge-warning">Awaiting action</span>
+      </div>
+
+      <div class="card">
+        <div class="stat-label">EXPIRING SOON</div>
+        <div class="stat-number">1</div>
+        <span class="badge badge-warning">Near Expiry</span>
+      </div>
+
+      <div class="card">
+        <div class="stat-label">Already Expired</div>
+        <div class="stat-number">1</div>
+        <span class="badge badge-danger">Expired</span>
+      </div>
+
+    </div>
+
+    <!-- ===== DASHBOARD GRID ===== -->
+    <div class="dashboard-grid">
+
+      <!-- ===== INVENTORY OVERVIEW ===== -->
+      <!-- ===== INVENTORY OVERVIEW (UPDATED) ===== -->
+      <div class="card">
+
+        <div class="card-header">
+          <h2 class="card-title">Inventory Overview</h2>
+        </div>
+
+        <table class="table">
+
+          <thead>
+          <tr>
+            <th>Supply Name</th>
+            <th>Quantity</th>
+            <th>Expiry Date</th>
+            <th>Status</th>
+          </tr>
+          </thead>
+
+          <tbody>
+
+          <tr>
+            <td>Surgical Gloves</td>
+            <td>150</td>
+            <td>2027-01-01</td>
+            <td><span class="badge badge-success">In Stock</span></td>
+          </tr>
+
+          <tr>
+            <td>Face Masks</td>
+            <td>0</td>
+            <td>2026-11-01</td>
+            <td><span class="badge badge-danger">Out of Stock</span></td>
+          </tr>
+
+          <tr>
+            <td>Alcohol</td>
+            <td>30</td>
+            <td>2026-06-01</td>
+            <td><span class="badge badge-warning">Expiring Soon</span></td>
+          </tr>
+
+          <tr>
+            <td>Metal Surgical Tray</td>
+            <td>1</td>
+            <td>—</td>
+            <td><span class="badge badge-warning">Low Stock</span></td>
+          </tr>
+
+          <tr>
+            <td>Sterile Gauze</td>
+            <td>1</td>
+            <td>2026-06-01</td>
+            <td><span class="badge badge-danger">Expired</span></td>
+          </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <!-- ===== RECENT REQUESTS ===== -->
+      <div class="card">
+
+        <div class="card-header">
+          <h2 class="card-title">Recent Requests</h2>
+        </div>
+
+        <div class="requests-list">
+
+          <div class="list-item">
+            <div>
+              <div class="list-item-title">
+                Face Masks x50
+              </div>
+
+              <div class="list-item-meta">
+                Emergency Room — 2026-05-22
+              </div>
+            </div>
+
+            <span class="badge badge-info">
+                  Approved
+                </span>
+          </div>
+
+          <div class="list-item">
+            <div>
+              <div class="list-item-title">
+                Alcohol x25
+              </div>
+
+              <div class="list-item-meta">
+                ICU — 2026-05-21
+              </div>
+            </div>
+
+            <span class="badge badge-warning">
+                  Pending
+                </span>
+          </div>
+
+          <div class="list-item">
+            <div>
+              <div class="list-item-title">
+                Syringes x100
+              </div>
+
+              <div class="list-item-meta">
+                Pediatrics — 2026-05-20
+              </div>
+            </div>
+
+            <span class="badge badge-success">
+                  Completed
+                </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  </body>
+</html>
